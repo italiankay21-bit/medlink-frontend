@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>MedLink — Create Prescription</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header>
+    <h1>MedLink — <span id="doctorNameLabel">Doctor</span></h1>
+    <button id="logoutBtn">Log Out</button>
+  </header>
+
+  <main>
+    <h2>Create Prescription</h2>
+    <form id="prescriptionForm">
+      <label for="patientInternalId">Patient Internal ID</label>
+      <input type="number" id="patientInternalId" placeholder="1" required />
+
+      <label>Medications</label>
+      <div id="medicationsList"></div>
+      <button type="button" id="addMedicationBtn">+ Add Medication</button>
+
+      <label for="instructions">Instructions</label>
+      <textarea id="instructions" rows="3" placeholder="Take twice daily with food"></textarea>
+
+      <button type="submit" class="primary">Create Prescription</button>
+    </form>
+
+    <div id="message" class="message"></div>
+  </main>
+
+  <script src="js/config.js"></script>
+  <script src="js/prescription.js"></script>
+</body>
+</html>

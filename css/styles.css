@@ -1,0 +1,195 @@
+/* css/styles.css */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f4f6f8;
+  margin: 0;
+  padding: 0;
+  color: #1f2937;
+}
+
+header {
+  background: #0f766e;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+header button {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 0.4rem 0.9rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+header button:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+main {
+  max-width: 480px;
+  margin: 3rem auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  margin-top: 0;
+}
+
+label {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+button.primary {
+  margin-top: 1.5rem;
+  width: 100%;
+  background: #0f766e;
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button.primary:hover {
+  background: #0d9488;
+}
+
+button.secondary {
+  margin-top: 0.6rem;
+  width: 100%;
+  background: white;
+  color: #0f766e;
+  border: 1px solid #0f766e;
+  padding: 0.6rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.message {
+  margin-top: 1rem;
+  padding: 0.7rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  display: none;
+}
+
+.message.error {
+  background: #fee2e2;
+  color: #b91c1c;
+  display: block;
+}
+
+.message.success {
+  background: #dcfce7;
+  color: #166534;
+  display: block;
+}
+
+.medication-row {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.medication-row input {
+  flex: 1;
+}
+
+.medication-row button {
+  background: #fee2e2;
+  color: #b91c1c;
+  border: none;
+  border-radius: 4px;
+  padding: 0 0.7rem;
+  cursor: pointer;
+}
+
+#addMedicationBtn {
+  margin-top: 0.6rem;
+  background: #f0fdfa;
+  color: #0f766e;
+  border: 1px dashed #0f766e;
+  padding: 0.4rem;
+  border-radius: 4px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.rx-card {
+  margin-top: 1.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  padding: 1rem;
+  background: #f9fafb;
+}
+
+.rx-card h3 {
+  margin-top: 0;
+}
+
+.rx-card dl {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 0.3rem 0.6rem;
+  margin: 0.5rem 0;
+}
+
+.rx-card dt {
+  font-weight: 600;
+  color: #4b5563;
+}
+
+.rx-card dd {
+  margin: 0;
+}
+
+.rx-med-item {
+  padding: 0.3rem 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.rx-med-item:last-child {
+  border-bottom: none;
+}
+
+.checkbox-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.checkbox-row input {
+  width: auto;
+}
+

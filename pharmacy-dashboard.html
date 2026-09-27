@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>MedLink — Pharmacy Dashboard</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header>
+    <h1>MedLink — <span id="pharmacyNameLabel">Pharmacy</span></h1>
+    <button id="logoutBtn">Log Out</button>
+  </header>
+
+  <main>
+    <h2>Look Up Prescription</h2>
+    <form id="lookupForm">
+      <label for="anonymousCode">Patient's Anonymous Code</label>
+      <input type="text" id="anonymousCode" placeholder="PX-XXXXXX" required />
+      <button type="submit" class="primary">Look Up</button>
+    </form>
+
+    <div id="lookupMessage" class="message"></div>
+
+    <div id="rxCard" class="rx-card" style="display: none;">
+      <h3>Prescription Details</h3>
+      <dl>
+        <dt>Doctor</dt>
+        <dd id="rxDoctor"></dd>
+        <dt>Hospital</dt>
+        <dd id="rxHospital"></dd>
+        <dt>Issued</dt>
+        <dd id="rxIssued"></dd>
+        <dt>Expires</dt>
+        <dd id="rxExpiry"></dd>
+        <dt>Status</dt>
+        <dd id="rxStatus"></dd>
+        <dt>Instructions</dt>
+        <dd id="rxInstructions"></dd>
+      </dl>
+
+      <strong>Medications</strong>
+      <div id="rxMedications"></div>
+
+      <form id="dispenseForm">
+        <label for="quantityDispensed">Quantity Dispensed</label>
+        <input type="text" id="quantityDispensed" placeholder="e.g. 14 tablets" required />
+
+        <label for="notes">Notes (optional)</label>
+        <textarea id="notes" rows="2"></textarea>
+
+        <div class="checkbox-row">
+          <input type="checkbox" id="fullyDispensed" checked />
+          <label for="fullyDispensed" style="margin: 0;">Fully dispensed (uncheck for partial fill)</label>
+        </div>
+
+        <button type="submit" class="primary">Dispense</button>
+      </form>
+
+      <div id="dispenseMessage" class="message"></div>
+    </div>
+  </main>
+
+  <script src="js/config.js"></script>
+  <script src="js/pharmacy-dashboard.js"></script>
+</body>
+</html>

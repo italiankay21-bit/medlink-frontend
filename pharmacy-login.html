@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>MedLink — Pharmacy Login</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header>
+    <h1>MedLink — Pharmacy Portal</h1>
+  </header>
+
+  <main>
+    <h2>Log in</h2>
+    <form id="loginForm">
+      <label for="pharmacistName">Pharmacist Name</label>
+      <input type="text" id="pharmacistName" placeholder="Jane Doe" required />
+
+      <label for="pharmacyName">Pharmacy Name</label>
+      <input type="text" id="pharmacyName" placeholder="GreenLife Pharmacy" required />
+
+      <label for="licenseNumber">Pharmacy License Number</label>
+      <input type="text" id="licenseNumber" placeholder="PH-1001" required />
+
+      <label for="password">Password</label>
+      <input type="password" id="password" required />
+
+      <button type="submit" class="primary">Log In</button>
+    </form>
+
+    <div id="message" class="message"></div>
+
+    <p style="text-align: center; margin-top: 1.5rem;">
+      <a href="index.html">Doctor? Log in here</a>
+    </p>
+  </main>
+
+  <script src="js/config.js"></script>
+  <script src="js/pharmacy-login.js"></script>
+</body>
+</html>
